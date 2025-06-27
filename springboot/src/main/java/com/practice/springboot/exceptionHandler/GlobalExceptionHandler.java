@@ -14,6 +14,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class GlobalExceptionHandler {
 
+
     @ExceptionHandler(MisMatchException.class)
     public ResponseEntity<ApiErrorResponse> misMatchException(MisMatchException ex) {
         ApiErrorResponse response = ApiErrorResponse.builder()
